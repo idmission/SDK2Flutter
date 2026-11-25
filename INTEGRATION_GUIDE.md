@@ -121,7 +121,7 @@ allprojects {
             name "GitLab"
             credentials(HttpHeaderCredentials) {
                 name = "Private-Token"
-                value = "WESesyuSD9fQeqNEyig6"
+                value = "<GitLab Token>"
             }
             authentication {
                 header(HttpHeaderAuthentication)
@@ -144,7 +144,7 @@ allprojects {
             name = "GitLab"
             credentials(HttpHeaderCredentials::class) {
                 name = "Private-Token"
-                value = "WESesyuSD9fQeqNEyig6"
+                value = "<GitLab Token>"
             }
             authentication {
                 create<HttpHeaderAuthentication>("header")
@@ -522,7 +522,7 @@ You have not updated `jvmTarget` to `17`. Apply the change in Step 2a.
 Your app's `android/app/src/main/AndroidManifest.xml` declares `android:theme` on `<application>` and conflicts with another library. Resolve by keeping the theme only on the `<activity>` tags and removing it from `<application>`.
 
 ### `FAILURE: Build failed with an exception ... Could not resolve com.idmission.sdk2:idmission-mediumsdk`
-The GitLab Maven credentials are missing or incorrect. Confirm the `Private-Token` value in your project-level `build.gradle` / `build.gradle.kts` matches the token `WESesyuSD9fQeqNEyig6`.
+The GitLab Maven credentials are missing or incorrect. Confirm the `Private-Token` value in your project-level `build.gradle` / `build.gradle.kts` matches the token `<GitLab Token>`.
 
 ### `pod install` fails with `Unable to find a specification for 'IDentityMediumSDK2.0'`
 Verify CocoaPods can reach trunk: `pod repo update`. If you are behind a proxy, configure CocoaPods proxy settings.
